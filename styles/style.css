@@ -65,14 +65,63 @@ body main div .button-add-book {
   margin: 20px 0px;
 }
 body main dialog {
-  height: 600px;
-  width: 400px;
+  height: 500px;
+  width: 380px;
+  padding: 40px;
   border: none;
   border-radius: 25px;
-  background-color: blue;
+  display: grid;
+  align-content: center;
+}
+body main dialog::backdrop {
+  background-color: gray;
+  opacity: 0.6;
 }
 body main dialog form {
-  background-color: red;
+  display: grid;
+  gap: 30px;
+}
+body main dialog form legend {
+  text-align: center;
+  font-weight: bold;
+}
+body main dialog form ul {
+  display: grid;
+  gap: 10px;
+}
+body main dialog form ul li {
+  list-style-type: none;
+}
+body main dialog form ul li label {
+  display: block;
+  font-size: 1rem;
+  padding: 0px 0px 3px 3px;
+}
+body main dialog form ul li input {
+  width: 100%;
+}
+body main dialog form ul .container-checkbox {
+  margin: 20px 0px;
+  display: flex;
+}
+body main dialog form ul .container-checkbox label {
+  font-size: 1.3rem;
+}
+body main dialog form ul .container-checkbox input {
+  height: 18px;
+  width: 30px;
+}
+body main dialog form ul .container-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+body main dialog form ul .container-buttons button {
+  font-size: 1.2rem;
+  background-color: #c5c5c5;
+  padding: 10px 0px;
+  width: 100px;
+  border: none;
+  border-radius: 25px;
 }
 body main .container-books {
   display: grid;

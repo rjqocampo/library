@@ -31,16 +31,17 @@ const myLibrary = [
     title: 'The Winds of Winter',
     pages: 600,
     "has read": true,
-  }
-
+  },
 ];
 
-function Book() {
-
+function Book(title, pages, hasRead) {
+  this.title = title,
+  this.pages = pages,
+  this["has read"] = hasRead
 }
 
 function addBookToLibrary() {
-    
+    // const newBook = new Book 
 }
 
 function displayBooks() {
