@@ -147,11 +147,12 @@ body main .container-books .book > button {
   width: 180px;
 }
 body main .container-books .book__remove {
-  background-color: #bebebe;
+  color: white;
+  background-color: #ff3c3c;
 }
 body main .container-books .book__has-read {
   background-color: rgb(113, 255, 113);
 }
 body main .container-books .book__has-read--false {
-  background-color: red;
+  background-color: rgb(255, 196, 0);
 }/*# sourceMappingURL=style.css.map */

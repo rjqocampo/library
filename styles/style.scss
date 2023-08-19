@@ -147,13 +147,14 @@ body {
           width: 180px;
         }
         &__remove{
-          background-color: #bebebe;
+          color: white;
+          background-color: #ff3c3c;
         }
         &__has-read {
           background-color: rgb(113, 255, 113);
         }
         &__has-read--false {
-          background-color: red;
+          background-color: rgb(255, 196, 0);
         }
       }
     }
