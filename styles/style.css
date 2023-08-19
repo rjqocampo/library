@@ -70,8 +70,6 @@ body main dialog {
   padding: 40px;
   border: none;
   border-radius: 25px;
-  display: grid;
-  align-content: center;
 }
 body main dialog::backdrop {
   background-color: gray;
@@ -105,7 +103,7 @@ body main dialog form ul .container-checkbox {
   display: flex;
 }
 body main dialog form ul .container-checkbox label {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 body main dialog form ul .container-checkbox input {
   height: 18px;
@@ -126,7 +124,7 @@ body main dialog form ul .container-buttons button {
 body main .container-books {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 350px;
+  grid-auto-rows: 450px;
   gap: 50px;
 }
 body main .container-books .book {
@@ -134,7 +132,7 @@ body main .container-books .book {
   border-radius: 15px;
   padding: 30px;
   display: grid;
-  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr 1fr;
   flex-direction: column;
   justify-items: center;
   align-items: center;
