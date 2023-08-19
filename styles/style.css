@@ -34,6 +34,77 @@ textarea {
 
 /* -------- Custom CSS -------- */
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
-  background-color: blanchedalmond;
+  background-color: rgb(212, 212, 212);
+}
+body header {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header h1 {
+  font-size: 2.5rem;
+}
+body main {
+  font-size: 1.5rem;
+  margin: 0px 100px 30px 100px;
+}
+body main div {
+  display: grid;
+  justify-content: center;
+}
+body main div .button-add-book {
+  background-color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin: 20px 0px;
+}
+body main dialog {
+  height: 600px;
+  width: 400px;
+  border: none;
+  border-radius: 25px;
+  background-color: blue;
+}
+body main dialog form {
+  background-color: red;
+}
+body main .container-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 50px;
+}
+body main .container-books .book {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+body main .container-books .book > p {
+  text-align: center;
+}
+body main .container-books .book > button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0px;
+  width: 180px;
+}
+body main .container-books .book__remove {
+  background-color: #bebebe;
+}
+body main .container-books .book__has-read {
+  background-color: rgb(113, 255, 113);
+}
+body main .container-books .book__has-read--false {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

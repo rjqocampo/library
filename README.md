@@ -1,0 +1,1 @@
+Exercise from The Odin Project to practice Javascript
