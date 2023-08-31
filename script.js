@@ -95,10 +95,10 @@ function deleteBook(event) {
 function toggleHasRead(event) {
   let index = event.target.parentNode.getAttribute('data-index');
 
-  if (myLibrary[index]['has read']) {
-    myLibrary[index]['has read'] = false;
+  if (myLibrary[index].hasRead) {
+    myLibrary[index].hasRead = false;
   } else {
-    (myLibrary[index]['has read']) = true;
+    (myLibrary[index].hasRead) = true;
   }
   clearDisplayBooks();
   displayBooks();
