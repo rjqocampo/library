@@ -3,25 +3,25 @@ const myLibrary = [
       title: 'A Song of Ice and Fire: Adventures of Hodor and Gandalf Part III Electric Boogaloo',
       author: 'George R. R. Martin',
       pages: 300,
-      "has read": false,
+      hasRead: false,
   },
   {
       title: 'A Game of Thrones',
       author: 'George R. R. Martin',
       pages: 400,
-      "has read": true,
+      hasRead: true,
   },
   {
     title: 'A Dance with Dragons',
     author: 'George R. R. Martin',
     pages: 500,
-    "has read": false,
+    hasRead: false,
   },
   {
     title: 'The Winds of Winter',
     author: 'George R. R. Martin',
     pages: 600,
-    "has read": true,
+    hasRead: true,
   },
 ];
 
@@ -52,23 +52,28 @@ buttonSubmit.addEventListener('click', (event) => {
   event.preventDefault();
 })
 
-function Book(title, author, pages, hasRead) {
-  this.title = title,
-  this.author = author,
-  this.pages = pages,
-  this["has read"] = hasRead
+// function Book(title, author, pages, hasRead) {
+//   this.title = title,
+//   this.author = author,
+//   this.pages = pages,
+//   this["has read"] = hasRead
+// }
+
+class Book {
+  constructor(title, author, pages, hasRead) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.hasRead = hasRead
+  }
 }
 
 function addBookToLibrary() {
-  console.log(inputTitle.value);
-  console.log(inputAuthor.value);
-  console.log(inputPages.value);
-  console.log(inputHasRead.checked);
-
   let title = inputTitle.value;
   let author = inputAuthor.value;
   let pages = inputPages.value;
   let hasRead = inputHasRead.checked;
+  console.log(inputHasRead.checked);
 
   const newBook = new Book(title, author, pages, hasRead);
   myLibrary.unshift(newBook);
@@ -120,7 +125,7 @@ function displayBooks() {
     cardPages.textContent = `${book.pages} pages`;
     cardRemove.textContent = 'Remove';
 
-    if (book['has read']) {
+    if (book.hasRead) {
       cardHasRead.textContent = 'Read';
       cardHasRead.setAttribute('class', 'book__has-read');
     } else {
